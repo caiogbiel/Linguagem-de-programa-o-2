@@ -1,0 +1,5 @@
+com\mycompany\rh\main.class
+com\mycompany\rh\model\Funcionario.class
+com\mycompany\rh\model\Gerente.class
+com\mycompany\rh\model\Empresa.class
+com\mycompany\rh\model\Programador.class
