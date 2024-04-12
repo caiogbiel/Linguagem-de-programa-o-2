@@ -1,3 +1,9 @@
 package model;
 
-//Escreva aqui todo o código
+public interface Material
+{
+    public void exibirDetalhes();
+
+
+
+}
