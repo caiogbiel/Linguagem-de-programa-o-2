@@ -1,10 +1,12 @@
 ## Crie um sistema gerenciador de materiais de uma biblioteca
 
 Características e funcionalidades:
-● Crie uma interface chamada “Material” com o método
-“exibirDetalhes()” que exibe os detalhes de um material;
-● Crie as classes “Livro” e “Revista” que herdem de “Material”. As
-classes devem ter os seguintes atributos e métodos:
+<ol>
+<li>● Crie uma interface chamada “Material” com o método
+“exibirDetalhes()” que exibe os detalhes de um material;</li>
+<li>● Crie as classes “Livro” e “Revista” que herdem de “Material”. As
+classes devem ter os seguintes atributos e métodos:</li>
+</ol>
 
 ○ Classe "Livro”
 <ol>
