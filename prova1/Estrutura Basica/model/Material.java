@@ -1,7 +1,3 @@
 package model;
 
-public interface Material
-{
-    public void exibirDetalhes();
-
-}
+//Escreva aqui todo o código
