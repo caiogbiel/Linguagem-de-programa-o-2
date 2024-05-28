@@ -1,12 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author caio.cardoso
- */
-public class Operacoes {
-    
+public interface Operacoes {
+    void adicionarLivro(Livro livro);
+    void emprestarLivro(Usuario usuario, Livro livro);
+    void devolverLivro(Livro livro);
+    void excluirLivro(Livro livro);
+    void pesquisarLivro(String criterio);
+    void verificarSituacaoUsuario(Usuario usuario);    
 }
