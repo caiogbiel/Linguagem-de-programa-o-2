@@ -67,4 +67,16 @@ public class BancoDAO {
         }
         return null;
     }
+    //metodo para listar usuarios
+    public List<Usuario> listarUsuarios() {
+        return new ArrayList<>(usuarios);
+    }
+    //metodo para listar livros
+    public List<Livro> listarLivros() {
+        return new ArrayList<>(livros);
+    }
+    //metodo para listar emprestimos
+    public List<Emprestimo> listarEmprestimosAtivos() {
+        return new ArrayList<>(emprestimosAtivos);
+    }
 }
