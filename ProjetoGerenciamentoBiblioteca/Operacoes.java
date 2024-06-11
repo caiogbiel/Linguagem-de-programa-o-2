@@ -3,6 +3,6 @@ public interface Operacoes {
     void emprestarLivro(Usuario usuario, Livro livro)throws Exception;
     void devolverLivro(Usuario usuario, Livro livro)throws Exception;
     void excluirLivro(Livro livro);
-    void pesquisarLivro(String criterio);
+    Livro pesquisarLivro(String criterio) throws Exception;
     void verificarSituacaoUsuario(Usuario usuario);    
 }
