@@ -105,8 +105,13 @@ public class OperacoesBiblioteca implements Operacoes{
     }
 
     @Override
-    public void pesquisarLivro(String criterio) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Livro pesquisarLivro(String criterio) throws Exception{
+        for(Livro livro : banco.listarLivros()) {
+            if(livro.getTitulo().contains(criterio) || livro.getAutor().contains(criterio) || livro.getAssunto().contains(criterio)){
+                return livro;
+            }
+        }
+        throw new Exception("Livro nao encontrado");
     }
 
     @Override
