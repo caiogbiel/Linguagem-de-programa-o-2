@@ -146,6 +146,6 @@ O projeto está organizado seguindo a arquitetura MVC (Model-View-Controller):
 - **Model:** Contém as classes que representam os dados (Usuario, Livro, Emprestimo).
 - **DAO:** Contém a classe que gerencia o acesso e a manipulação dos dados (BancoDAO).
 - **Service:** Contém a lógica de negócio e manipulação dos dados (OperacoesBiblioteca).
-- **Controller:** Pode ser implementado para gerenciar a interação entre a interface do usuário e o serviço, controlando as operações conforme necessário. (Não está presente no código fornecido, mas pode ser adicionado conforme a necessidade do projeto).
+- **Controller:** É implementado para gerenciar a interação entre a interface do usuário e o serviço, controlando as operações conforme necessário.
 
 Essa estrutura modulariza o código, facilitando a manutenção e a escalabilidade do sistema.
