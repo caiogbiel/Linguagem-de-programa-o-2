@@ -116,7 +116,24 @@ public class OperacoesBiblioteca implements Operacoes{
 
     @Override
     public void verificarSituacaoUsuario(Usuario usuario) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        if(!banco.listarUsuarios().equals(usuario)) {
+            System.out.println("Usuario nao existe");
+        }
+        List<Emprestimo> emprestimoUsuario = new ArrayList<>();
+
+        for(Emprestimo emprestimo : banco.listarEmprestimosAtivos()){
+            if(emprestimo.getUsuario().equals(usuario)){
+                emprestimoUsuario.add(emprestimo);
+            }
+        }
+        if (emprestimoUsuario.isEmpty()) {
+            System.out.println("Usuario nao possui emprestimos ativos");
+        }
+        else {
+            System.out.println("Emprestimos ativos do usuario: ");
+            for (Emprestimo emprestimo : emprestimoUsuario) {
+                System.out.println("Livro: " + emprestimo.getLivro().getTitulo() + ", Data de Empréstimo: " + emprestimo.getDataEmprestimo() + ", Data de Devolução Prevista: " + emprestimo.getDataDevolucao());
+            }
+        }
     }
-    
 }
