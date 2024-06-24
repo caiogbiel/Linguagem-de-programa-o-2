@@ -1,14 +1,9 @@
 package com.example.biblioteca.controlador;
 
-import com.example.biblioteca.App;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import javafx.event.ActionEvent;
-
-import java.io.IOException;
 
 public class telaFuncoesController {
     @FXML
@@ -34,4 +29,13 @@ public class telaFuncoesController {
 
     @FXML
     private Button tSearchUser;
+
+    @FXML
+    private Button tSair;
+
+    @FXML
+    private void fecharJanela(ActionEvent event) {
+        Stage stage = (Stage) tSair.getScene().getWindow();
+        stage.close();
+    }
 }
