@@ -16,7 +16,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button fx:id="tAdd" layoutX="20.0" layoutY="94.0" mnemonicParsing="false" prefWidth="150.0" text="Adicionar Livro" textFill="TEAL" />
+            <Button fx:id="tAdd" layoutX="20.0" layoutY="94.0" mnemonicParsing="false" onAction="#telaAdd" prefWidth="150.0" text="Adicionar Livro" textFill="TEAL" />
             <Button fx:id="tRemove" layoutX="20.0" layoutY="159.0" mnemonicParsing="false" prefWidth="150.0" text="Remover Livro" textFill="TEAL" />
             <Button fx:id="tEmpre" layoutX="371.0" layoutY="94.0" mnemonicParsing="false" prefWidth="150.0" text="Emprestimo De Livro" textFill="TEAL" />
             <Button fx:id="tDevolution" layoutX="371.0" layoutY="159.0" mnemonicParsing="false" prefWidth="150.0" text="Devolucao De Livro" textFill="TEAL" />

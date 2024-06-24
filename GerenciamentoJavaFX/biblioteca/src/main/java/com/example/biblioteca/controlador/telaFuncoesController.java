@@ -1,5 +1,9 @@
 package com.example.biblioteca.controlador;
 
+import java.io.IOException;
+
+import com.example.biblioteca.App;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -37,5 +41,10 @@ public class telaFuncoesController {
     private void fecharJanela(ActionEvent event) {
         Stage stage = (Stage) tSair.getScene().getWindow();
         stage.close();
+    }
+
+    @FXML
+    private void telaAdd() throws IOException {
+        App.trocarLayout("tAddBook.fxml");
     }
 }
